@@ -1,0 +1,161 @@
+
+/* Google fonts selections */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+/* For general settings of the visual look of the page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f0eb;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Headings */
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #755b50;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #967568;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #755b50;
+}
+
+
+/* Paragraphs */
+p {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Sections */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0d5ce;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+/* Header */
+header {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+}
+
+header p {
+    margin-top: 35px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #d8c5ba;
+}
+
+
+/* About me container */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-container p {
+    flex: 1;
+}
+
+
+/* For tablet */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-container {
+        gap: 15px;
+    }
+
+    .about-container img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+
+/* For mobile */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    header p {
+        margin-top: 20px;
+        top: 0;
+    }
+}
